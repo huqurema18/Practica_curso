@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            background-color: aqua;
+            height: 50px;
+            font-size:7ch;
+            color: white;
+            
+        }
+        .div2{
+            background-color: brown;  
+            position: relative;   
+            font-size:7ch;
+            color: white;    
+            height: 50px;   
+        }
+        .div3{
+            background-color: yellow;
+            position: relative;
+            height: 50px;
+            font-size:7ch;
+            color: rgb(0, 0, 0);
+        }
+        .subdiv1{
+            background-color:chartreuse;
+            font-size:1ch;
+            color: rgb(0, 0, 0);
+            margin-right: 10px;
+                       
+            
+        }
+        .monda{
+            position: relative;
+            top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .ll{
+            position:absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            right: 45%;
+            top: 60px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">1
+    </div>
+    <div class="div2">
+        <div class="monda">
+            <div class="subdiv1">sub1</div>
+            <div class="subdiv1">sub2</div>
+            <div class="subdiv1">sub3</div>
+        </div>
+    </div>
+    <div class="div3">
+        <div class="ll">
+
+        </div>
+    </div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+</html>

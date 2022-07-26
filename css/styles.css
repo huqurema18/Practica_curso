@@ -1,0 +1,65 @@
+
+:root{
+    --negro:#101b23;
+    --princpal:#1c415c;
+    --azul:#3d8dac;
+    --contraste1:#e0db3f;
+    --contraste2:#ac0b4c;
+    --blanco:#ffffff;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /*1rem = 10 px */
+    font-family: 'Playfair Display', serif;
+}
+.contenedor{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+}
+.titulo span{
+    font-size: 2rem;
+}
+.barra-principal{
+    background-color: var(--contraste2);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+}
+.barra-principal a{
+    color: var(--blanco);
+    font-size: large;
+    text-decoration:none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.barra-principal a:hover{
+    background-color: var(--contraste1);
+    color: var(--negro); 
+    font-size: 2rem;
+    font-weight: bold; 
+
+}
+.background-barra{
+    background-color: var(--contraste2);
+}
+@media (min-width: 480px) { 
+    .barra-principal{
+        flex-direction: row;
+    }    
+}
+
+.hero {
+    background-image: url(../img/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
