@@ -6,73 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .div1{
-            background-color: aqua;
-            height: 50px;
-            font-size:7ch;
-            color: white;
-            
+        *,*:before,*:after{
+            box-sizing:inherit;
         }
-        .div2{
-            background-color: brown;  
-            position: relative;   
-            font-size:7ch;
-            color: white;    
-            height: 50px;   
+        html{
+            box-sizing:border-box;
+            background-color: antiquewhite;
         }
-        .div3{
-            background-color: yellow;
+        h1{
+            text-align: center;
+        }
+        .contenedor-relative{
             position: relative;
-            height: 50px;
-            font-size:7ch;
-            color: rgb(0, 0, 0);
-        }
-        .subdiv1{
-            background-color:chartreuse;
-            font-size:1ch;
-            color: rgb(0, 0, 0);
-            margin-right: 10px;
-                       
-            
-        }
-        .monda{
-            position: relative;
-            top: 10px;
+            border-style: solid;
+            width: 90%; 
+            margin: 0 auto;
+            height: 450px;
             display: flex;
+            flex-flow: row wrap;
             justify-content: center;
+            align-content: center;
+            
+            
         }
-        .ll{
-            position:absolute;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: blueviolet;
-            right: 45%;
-            top: 60px;
+        .caja{
+            width: 200px;
+            margin: 10px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            
 
+        }
+        .circulo{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            background-color: red;
+            width: 50px;
+            height: 50px;
+
+        }
+        .w{
+            flex-grow: 2;
+            background-color: cadetblue;
+        }
+        .e{
+            flex-grow: 4;
+            background-color: rgb(248, 248, 91);
+        }
+        .r{
+            flex-grow: 3;
+            background-color: rgb(236, 101, 101);
+        }
+        .letra{
+            position: absolute;
+            width: 50px;
+            text-align: center;
+            left: 50%;
+            margin-left: -25px;
+            top: 1rem;
         }
     </style>
 </head>
 <body>
-    <div class="div1">1
-    </div>
-    <div class="div2">
-        <div class="monda">
-            <div class="subdiv1">sub1</div>
-            <div class="subdiv1">sub2</div>
-            <div class="subdiv1">sub3</div>
-        </div>
-    </div>
-    <div class="div3">
-        <div class="ll">
-    </div>
-    </div>
-    <div class="div1"></div>
-    <div class="div2"><p>Lentonces</p>
-    </div>
-    <div><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, excepturi. Mollitia iure eius voluptate culpa quia nihil et animi eveniet? Fugiat facere id repellendus amet rerum voluptatibus. Maiores, vel! Accusamus!</h6></div>
-    <!--Esta mierda no se que mas hace-->
-    <!--Ahora solo rogar que funcione listo para usar linux-->
+    <h1>Aprender a usar Position y Display</h1>
+    <div class="contenedor-relative">
+        <div class="caja w">
+            <div class="letra">
+                caja1
+            </div>
+            <div class="circulo">
 
+            </div>
+        </div>
+        <div class="caja e">
+            caja2
+        </div>
+        <div class="caja r">
+            caja3
+        </div>
+       
+    </div>
 </body>
 </html>
