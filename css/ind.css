@@ -1,0 +1,60 @@
+:root{
+    --negro:#101b23;
+    --princpal:#1c415c;
+    --azul:#3d8dac;
+    --contraste1:#e0db3f;
+    --contraste2:#ac0b4c;
+    --blanco:#ffffff;
+}
+*,*:before,*:after{
+    box-sizing:inherit;
+}
+html{
+    font-size: 62.5%;
+    box-sizing:border-box;
+    background-color: antiquewhite;
+}
+body{
+    font-size: 16px; /*1rem = 10 px */
+    font-family: 'Playfair Display', serif;
+}
+.barra-nav{
+    font-size: 2.8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    position: fixed;
+    top: 3rem;
+}
+.cont-nav{
+    display: flex;
+    justify-content: center;
+}
+.barra-nav a{
+    color: var(--blanco);
+    font-size: large;
+    text-decoration:none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5rem;    
+}
+.portada{
+    background-image: url(../img/triatlon3.jpg);
+    height: 65rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bienvenido{
+    display: flex;
+}
+.bienvenido-img{
+    flex-grow: 2;
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--azul);
+}
+.bienvenido-historia{
+    background-color: var(--blanco);
+    flex-grow: 2;
+}
