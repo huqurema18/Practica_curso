@@ -92,39 +92,41 @@
             </section>
         </div>
         
-    </main>
+    
     <section>
         <h2>Contacto</h2>
-        <form action="">
+        <form action="" class="formulario">
             <fieldset>
                 <legend> Contáctanos por fis <\3 </legend>
-                <div>
-                    <label for="">Nombre: </label>
-                    <input type="text" placeholder="Tu Nombre">
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="">Nombre: </label>
+                        <input class="campo-input" type="text" placeholder="Tu Nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="">Teléfono: </label>
+                        <input class="campo-input" type="tel" placeholder="Tu Teléfono" name="" id="">
+                    </div>
+                    <div class="campo">
+                        <label for="">Correo: </label>
+                        <input class="campo-input" type="email" placeholder="Tu correo">
+                    </div>
+                    <div class="campo">
+                        <label for="">Mensaje: </label>
+                        <textarea class="campo-input" name="message" rows="10" cols="30">
+                            Coloca aquí tu mensajito 
+                        </textarea>
+                    </div>
                 </div>
-                <div>
-                    <label for="">Teléfono: </label>
-                    <input type="tel" placeholder="Tu Teléfono" name="" id="">
-                </div>
-                <div>
-                    <label for="">Correo: </label>
-                    <input type="email" placeholder="Tu correo">
-                </div>
-                <div>
-                    <label for="">Mensaje: </label>
-                    <textarea name="message" rows="10" cols="30">
-                        Coloca aquí tu mensajito 
-                    </textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
+                <div class="alinear-derecha flex">
+                    <input class="w-100 boton" type="submit" value="Enviar">
                 </div>
                 
             </fieldset>
         </form>
     </section>
-    
-    <footer>
+    </main>
+    <footer class="footer">
         <p>Todos los derechos reservados. Hugo Fernando </p>
     </footer>
     
