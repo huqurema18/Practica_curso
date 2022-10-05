@@ -179,6 +179,8 @@ h3{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
+    width: 80%;
+    margin: auto;
 }
 @media (min-width: 768px){
     .grid__por{
@@ -195,7 +197,7 @@ h3{
 }
 .por__imagen{
     row-gap: 1/2;
-    margin-left: 4rem;
+    margin-left: 20%;
 }
 .por__titulo{
     row-gap: 2/3;
